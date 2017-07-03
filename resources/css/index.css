@@ -1,0 +1,33 @@
+/*overall page parameters*/
+html {
+    font-size: 18px;
+}
+
+/*top of page headder*/
+.title {
+    background: black;
+    border: 2px solid pink;
+    color: white;
+}
+
+.title img {
+    padding-right: 1rem;
+    padding-left: .5rem;
+    height: 1.5rem;
+}
+
+.title h4 {
+    padding: .66rem 0;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+/*cover photo*/
+
+.cover {
+    background-image: url("../images/moto.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+}
