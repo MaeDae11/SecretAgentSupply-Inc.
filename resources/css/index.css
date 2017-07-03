@@ -1,13 +1,24 @@
 /*overall page parameters*/
-html {
+
+
+html
+body {
     font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /*top of page headder*/
-.title {
+.title-container {
     background: black;
-    border: 2px solid pink;
     color: white;
+}
+
+.title {
+    max-width: 960px;
+    border: 2px solid pink;
+    display: flex;
+    align-items: center;
+
 }
 
 .title img {
@@ -30,4 +41,94 @@ html {
     background-position: center;
     background-size: cover;
     height: 25rem;
+    display: block;
 }
+.cover-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.arrival {
+    background: black;
+    width: 20em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    top: 9em;
+    position: relative;
+    padding: 2em 3em;
+
+}
+
+.arrival h4 {
+    font-size: 1rem;
+}
+
+.arrival h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: .25em 0;
+}
+
+/*navigation menu*/
+
+.navigation-container {
+    background: firebrick;
+    padding: 0.75rem 0;
+    text-align: center;
+}
+
+.navigation span {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/*products*/
+
+.products-container {
+    border: 2px solid orange;
+    width: 100%;
+    text-align: center;
+    
+    margin-top: 3rem;
+}
+.products {
+    width: 960px;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+.products img {
+    padding: 2rem 0;
+    height: 9rem;
+}
+
+.products h3 {
+    background: black;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.pen {
+    border: 4px solid black;
+    width: 30%;
+}
+
+.watch {
+    border: 4px solid black;
+    width: 30%;
+}
+
+.glasses {
+    border: 4px solid black;
+    width: 30%;
+}
+
+.glasses img {
+    width: 50%;
+    height: 9rem;
+}
+
+
+/*location and hours*/
+
