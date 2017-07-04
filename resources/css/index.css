@@ -7,18 +7,21 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.container {
+    margin: 0 auto;
+}
+
 /*top of page headder*/
 .title-container {
     background: black;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
-    max-width: 960px;
+    max-width: 960px
     border: 2px solid pink;
-    display: flex;
-    align-items: center;
-
 }
 
 .title img {
@@ -48,7 +51,7 @@ body {
     margin: 0 auto;
 }
 
-.arrival {
+.new-arrival {
     background: black;
     width: 20em;
     font-family: Helvetica, Arial, sans-serif;
@@ -60,11 +63,11 @@ body {
 
 }
 
-.arrival h4 {
+.new-arrival h4 {
     font-size: 1rem;
 }
 
-.arrival h2 {
+.new-arrival h2 {
     font-size: 2em;
     line-height: 1.2em;
     margin: .25em 0;
@@ -74,30 +77,33 @@ body {
 
 .navigation-container {
     background: firebrick;
+    border: 2px solid yellow;
     padding: 0.75rem 0;
-    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-.navigation span {
-    display: inline-flex;
-    justify-content: space-between;
+.navigation {
+    max-width: 960px
 }
 
 /*products*/
 
 .products-container {
     border: 2px solid orange;
-    width: 100%;
     text-align: center;
-    
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
 }
+
 .products {
     width: 960px;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-
 }
+
 .products img {
     padding: 2rem 0;
     height: 9rem;
@@ -125,10 +131,71 @@ body {
 }
 
 .glasses img {
-    width: 50%;
-    height: 9rem;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
 /*location and hours*/
 
+.business-info {
+    display: flex;
+    justify-content: center;
+}
+.info {
+    width: 960px;
+    margin-top: 3rem;
+    display: inline-block;
+    border: 2px solid pink;
+}
+
+.title-info h3 {
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+    width: 35%;
+}
+
+.info span {
+    color: black;
+}
+
+/*footer*/
+
+.footer {
+    background: black;
+    padding: 5rem 0;
+    margin-top: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 960px;
+    border: 2px solid white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+/*tablet size */
+
+@media only screen and (max-width: 1024px) {
+
+    .products {
+        display: inline-flex;
+    }
+
+    .pen, .watch, .glasses {
+        width: 47%;
+    }
+
+    .title-info {
+        width: 35%;
+    }
+
+}
